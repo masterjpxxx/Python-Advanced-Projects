@@ -1198,3 +1198,4 @@ console.error: Region.sys.mjs: "Error fetching region" (new Error("TIMEOUT", "re
 console.error: Region.sys.mjs: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.sys.mjs", 414))
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://portal.depedsdn.com."
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://portal.depedsdn.com."
+1683618946887	Marionette	INFO	Stopped listening on port 51775
