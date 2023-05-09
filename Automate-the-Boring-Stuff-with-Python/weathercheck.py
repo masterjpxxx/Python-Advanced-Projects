@@ -17,5 +17,11 @@ params = {
     "lon": longitude
 }
 response = requests.get(url, params=params)
-print(response.text)
+#print(response.text)
+
+json_data = json.loads(response.text)
+current = json_data['coord']['lon']
+weather = json_data['weather'][0]['description']
+print(f'The current location is {current}, weather conditions is {weather} ')
+
 response.raise_for_status()
