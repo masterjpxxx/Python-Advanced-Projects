@@ -10,7 +10,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('-n1', type=int, help='A number', default=1)
     parser.add_argument('-n2', type=int, help='Another Number', default=1)
-    parser.add_argument('--config', '-c', type=argparse.FileType('r'), help='Config file')
+    parser.add_argument('--config', '-c', type=argparse.FileType('r'), help='Config')
     args = parser.parse_args()
     
     if args.config:
@@ -18,5 +18,4 @@ if __name__ == '__main__':
         config.read_file(args.config)
         args.n1 = int(config['DEFAULT']['n1'])
         args.n2 = int(config['DEFAULT']['n2'])
-        
     main(args.n1, args.n2)
